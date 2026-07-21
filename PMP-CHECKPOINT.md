@@ -1,37 +1,31 @@
 # PMP Salla Theme — Publishing Checkpoint
 
-Last updated: 2026-07-21 03:25 Asia/Riyadh
+Last updated: 2026-07-21 Asia/Riyadh
 
 ## Completed
 
-- Full Salla Twilight theme source created from the official engine baseline.
+- Full Salla Twilight theme source recovered and completed.
 - Original PMP Arabic RTL homepage, header and footer implemented.
 - PMP black/red/white visual system applied.
 - Engine search paths: HEMI 5.7, HEMI 6.4/392, LS, LT, Coyote, Godzilla, 1FZ and 2JZ.
-- Twelve part-type search paths and twenty performance-brand search paths.
+- Twelve part-type paths and twenty performance-brand paths.
 - Original PMP hero, HEMI and LS/LT production banners bundled locally.
-- Native Salla product list, search, account, cart, checkout, product and support components preserved.
-- Production Webpack build passes. Output is in `public/`.
+- Native Salla product, search, account, cart, checkout and support flows preserved.
+- Production Webpack build verified.
+- Clean public GitHub repository published at `ABODAH1234/pmp-salla-theme`.
+- `twilight.json` and theme sources are available at the root of `main`.
 
-## Exact publishing blocker
+## Salla handoff
 
-The connected Salla MCP can edit settings for already-installed themes, but it cannot register or upload a new theme source repository. Salla's official flow requires either:
-
-1. Importing this repository through Salla Partners → My Themes → Import Theme, where Salla detects the root `twilight.json`; or
-2. Linking the directory with the authenticated Salla CLI.
-
-Do not rebuild the homepage using Raed blocks. The merchant requires the standalone PMP theme.
+Import `ABODAH1234/pmp-salla-theme` through Salla Partners, then attach a demo store and verify its preview before making the theme live. The current connected merchant API can manage installed theme versions but cannot register a new source repository.
 
 ## Build
 
 ```bash
-pnpm install --frozen-lockfile
+pnpm install
 pnpm production
 ```
 
-## Catalog status
+## Catalog safety note
 
-- Current Salla API audit returned zero categories.
-- Existing products have no category assignments.
-- Several existing products have placeholder prices of 0 or 1 SAR; do not make them purchasable before verified landed-cost pricing.
-- Product imports require authorized supplier data: SKU/MPN, cost, dealer discount, weight/dimensions, freight allocation, HS code/tariff, stock, fitment, approved images and market comparison.
+Do not make products purchasable until their cost, selling price, stock and fitment data are verified. The theme work does not change catalog pricing.
