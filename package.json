@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ABODAH1234/tw-gptghf.git"
+    "url": "git+https://github.com/ABODAH1234/pmp-salla-theme.git"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
